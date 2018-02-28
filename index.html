@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="/manifest.json"> <!-- Android startup screen -->
+<link rel="apple-touch-icon" href="https://cdn.glitch.com/fadce712-4cab-4043-84b6-44939bd5e0eb%2Ftouch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.glitch.com/fadce712-4cab-4043-84b6-44939bd5e0eb%2Ftouch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.glitch.com/fadce712-4cab-4043-84b6-44939bd5e0eb%2Ftouch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="167x167" href="https://cdn.glitch.com/fadce712-4cab-4043-84b6-44939bd5e0eb%2Ftouch-icon-ipad-retina.png">
+<link href="https://cdn.glitch.com/fadce712-4cab-4043-84b6-44939bd5e0eb%2Fapple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image">
+<script src="https://cdn.steemjs.com/lib/latest/steem.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.css" />         
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+<script type="text/javascript" src="countdown.js"></script>
+<link rel="stylesheet" href="styles.css" />
+<title>Steemit Stats</title>
+
+</head>
+<body>
+
+ <div class="deck">
+        <div class="start"></div>
+        <div class="scrollable">
+            <div data-bind="" id="ccc">
+                <div id="statsdiv" class="card property summary date aggregate hoverable waves-effect waves-block tcolor">
+                    <div class="card-content ">
+                      <i class="material-icons sticon modal-trigger" href="#modaluser">person</i>
+                        <span class="card-title sttitle"></span>
+                        <div class="container" data-bind="">
+                            <div class="row">
+                                <div class="col s12">
+                                <div>
+                                   Reputation: <span id="reputation"></span><br>
+                                   STPower:  <span id="power"></span><br>
+                                   Balance: <span id="balance"></span><br>
+                                   BalanceST: <span id="balancest"></span><br>
+                                   Followers: <span id="followers"></span><br>
+                                   Unpaid: <span id="unpaid"></span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div  id="ccc1"></div>
+              <div class="spinner">
+               <div class="bounce1"></div>
+              <div class="bounce2"></div>
+               <div class="bounce3"></div>
+              </div>
+</div>
+</div>
+</div>
+  
+    <div id="modaluser" class="modal">
+    <div class="modal-content">
+      <b>Steemit username:</b>
+      <input id="steem_user_input" type="text" autofocus class="validate">
+    </div>
+    <div class="modal-footer">
+      <a href="#" onclick="select_user()" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
