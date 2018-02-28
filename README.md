@@ -5,7 +5,7 @@ This is simple app that displays your steemit stats on single page along with po
 
 ## ← index.html
 
-This is page where the div etc are located 
+This is page where the layout is
 
 ## ← styles.css
 
