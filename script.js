@@ -15,10 +15,7 @@ $(document).ready(function() { // Scale a bit if on desktop looks nicer
         $(".deck").css('margin-left', '30%');
         $(".deck").css('width', '40%');
     }
-    //Made everything and tried on dothers iphone and when popup for user input opens keyboard pushes popup out of screen
-    //tried looking on internet but found no working solution, so I decided to try and move modal so it's still in screen
-    //when keyboard opens. This worked but then when I tried on Android it was same as on iphone before adding style wierd
-    //so I added bottom and height styling only for Apple devices lost an hour for nothing :(
+
     if (/Ipad|iPhone|iPod/i.test(navigator.userAgent)) { 
         $("#modaluser").css('bottom', '300px');
         $(".deck").css('height', '200px');
