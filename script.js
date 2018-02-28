@@ -27,7 +27,6 @@ $(document).ready(function() { // Scale a bit if on desktop looks nicer
     get_steem_data(); //Start
   
    $("#statsdiv").click(function(){
-   //window.open("https://steemit.com/@"+steem_user);
    window.location = "https://steemit.com/@"+steem_user;
    });
 });

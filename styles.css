@@ -1,168 +1,199 @@
-body{
-  background: #000;
+body {
+    background: #000;
 }
 
-    .deck {
-        padding: 5px;
-    }
-    .card{
-        margin-top: -7px;
-    }
+.deck {
+    padding: 5px;
+}
+
+.card {
+    margin-top: -7px;
+}
 
 .preloader-wrapper.small {
-        right: -12px;
-        width: 20px;
-        height: 20px;
-        top: 2px;
-    }
-    .card-title {
-        height: 20px; 
-    }
-    .summary .card-content {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-bottom: -15px;
-        margin-left: -15px;
-        margin-right: -25px
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+}
 
-    }
+.card-title {
+    height: 20px;
+    font-weight: 450!important;
+}
 
-    .label {
-      float: left;
-       margin-left:-25px;
-/*       font-size: 14px; */
-      font-weight:normal;
-    }
-    .label_prices{
-      font-weight:normal;
-      white-space:pre;
-    }
-    .value {
-        float: right;
-        color: #000;
-        text-align: right;
-    }
-    .container {
-        font-size: 14px;
-    }
+.summary .card-content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    margin-right: -25px
+}
 
-    .ct{
-      line-height: normal;
-      ont-size:16px!important;
-       font-weight: bold!important;
-    }
-    .start {
-        height: 9px;
-    }
-    .tcolor{
-        background-color: #1abc9c!important;
-        color: #FFF3E0!important;
-        text-shadow:
-          -1px -1px 0 #000,
-          1px -1px 0 #000,
-          -1px 1px 0 #000,
-          1px 1px 0 #000;  
-       
-    }
-    .tcolor2{
-      background-color: #FFF3E0!important;
-    }
-    .vtot{
-        font-size: 17px!important; 
-        margin-top: -11px!important;
-          text-shadow:
-    -1px -1px 0 #000,
+.label {
+    float: left;
+    margin-left: -25px;
+    /*       font-size: 14px; */
+    font-weight: normal;
+}
+
+.label_prices {
+    font-weight: normal;
+    white-space: pre;
+}
+
+.value {
+    float: right;
+    color: #000;
+    text-align: right;
+}
+
+.container {
+    font-size: 14px;
+}
+
+.ct {
+    line-height: normal;
+    font-size: 16px!important;
+    font-weight: bold!important;
+}
+
+.start {
+    height: 9px;
+}
+
+.tcolor {
+    background-color: #1abc9c!important;
+    color: #FFF3E0!important;
+    text-shadow: -1px -1px 0 #000,
+    0 -1px 0 #000,
     1px -1px 0 #000,
+    1px 0 0 #000,
+    1px 1px 0 #000,
+    0 1px 0 #000,
     -1px 1px 0 #000,
-    1px 1px 0 #000;  
-    }
+    -1px 0 0 #000;
+}
+
+.tcolor2 {
+    background-color: #FFF3E0!important;
+}
+
+.vtot {
+    font-size: 17px!important;
+    margin-top: -11px!important;
+    text-shadow: -1px -1px 0 #000,
+    0 -1px 0 #000,
+    1px -1px 0 #000,
+    1px 0 0 #000,
+    1px 1px 0 #000,
+    0 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px 0 0 #000;
+}
 
 #countdown {
 
     font-size: 20px;
     margin-left: 10px;
     color: #eeeeee;
-    display:inline-block;
-    width:95%;
+    display: inline-block;
+    width: 95%;
     white-space: nowrap;
-    overflow:hidden !important;
+    overflow: hidden !important;
     text-overflow: ellipsis;
 }
 
+
 /*SPINNER*/
-  .spinner {
-  margin: 100px auto 0;
-  width: 70px;
-  text-align: center;
+
+.spinner {
+    margin: 100px auto 0;
+    width: 70px;
+    text-align: center;
 }
 
-.spinner > div {
-  width: 18px;
-  height: 18px;
-  background-color: #1abc9c;
+.spinner>div {
+    width: 18px;
+    height: 18px;
+    background-color: #1abc9c;
 
-  border-radius: 100%;
-  display: inline-block;
-  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
 .spinner .bounce1 {
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
 }
 
 .spinner .bounce2 {
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% { -webkit-transform: scale(0) }
-  40% { -webkit-transform: scale(1.0) }
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
 }
 
 @keyframes sk-bouncedelay {
-  0%, 80%, 100% { 
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  } 40% { 
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
-  }
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
 }
+
+
 /*SPINNER END*/
 
-a.card { 
-  color: black;  
+a.card {
+    color: black;
 }
 
-.sticon{
+.sticon {
     position: relative;
     float: right;
     top: 0px;
-    right: 0px; 
+    right: 0px;
     font-size: 40px;
 }
 
-.modal{
- background-color: #FFF3E0;
+.modal {
+    background-color: #FFF3E0;
 }
 
-.modal-action{
- background-color: #FFF3E0;
+.modal-action {
+    background-color: #FFF3E0;
 }
-.modal-footer{
- background-color: #FFF3E0!important;
+
+.modal-footer {
+    background-color: #FFF3E0!important;
 }
-#modaluser1{
- bottom: 300px; 
-  height: 200px;
+
+#modaluser1 {
+    bottom: 300px;
+    height: 200px;
 }
-.votes_right{
-float:right;
-font-weight:normal;
-font-size:10px;
-margin-right:-20px;
-margin-top:5px;
+
+.votes_right {
+    float: right;
+    font-weight: normal;
+    font-size: 10px;
+    margin-right: -20px;
+    margin-top: 5px;
 }
