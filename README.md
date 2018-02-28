@@ -15,10 +15,6 @@ CSS  styling rules
 
 This is where all the magic happens :). All calls are through steemit API.
 
-## ← countdown.js
-
-Used to display time remaining until posts payout
-
 ## ← index.html
 
 Android launch screen and app icon settings
