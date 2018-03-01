@@ -15,7 +15,7 @@ $(document).ready(function() { // Scale a bit if on desktop looks nicer
         $(".deck").css('margin-left', '30%');
         $(".deck").css('width', '40%');
     }
-
+    
     if (/Ipad|iPhone|iPod/i.test(navigator.userAgent)) { 
         $("#modaluser").css('bottom', '300px');
         $(".deck").css('height', '200px');
@@ -116,7 +116,7 @@ function get_steem_data() {
 function select_user() {
   var d = $('#modaluser'); 
   d.scrollTop (d[0].scrollHeight - d.height ());
-    steem_user = $("#steem_user_input").val().replace(/^@/, '').toLowerCase(); //Strip @ if it's on begining of username
+    steem_user = $("#steem_user_input").val().replace(/^@/, '').toLowerCase().trim(); //Strip @ if it's on begining of username
     localStorage.setItem("stuser", steem_user);
     $("#ccc1").empty();
     get_steem_data();
